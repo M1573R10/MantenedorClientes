@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 
 Public Class Form1
-    Dim conexion As New SqlConnection("Data Source=DESKTOP-UQP3LNL;Initial Catalog=Clientes;Integrated Security=True")
+    Dim conexion As New SqlConnection("Data Source=ORDENADOR;Initial Catalog=Clientes;Integrated Security=True")
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             Dim consulta As String = "select Nombre, Empresa, Cargo from MantenedorClientes order by Nombre"
